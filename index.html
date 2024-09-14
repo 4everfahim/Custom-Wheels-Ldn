@@ -12,8 +12,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column; /* Moves content upwards */
             height: 100vh;
-            background-color: #1e1e1e;
+            background-color: #000; /* Black base color */
+            background-image: url('https://yourimageurl.com/forged-carbon-background.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
             color: #fff;
             text-align: center;
         }
@@ -25,6 +29,27 @@
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+        .form-container {
+            margin-top: 10px; /* Reduced margin to move text upwards */
+        }
+        .notify-form input[type="email"] {
+            padding: 10px;
+            width: 70%;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .notify-form input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f39c12;
+            color: #fff;
+            cursor: pointer;
+        }
+        .notify-form input[type="submit"]:hover {
+            background-color: #e67e22;
+        }
     </style>
 </head>
 <body>
@@ -32,4 +57,9 @@
         <h1>Custom Wheels Ldn</h1>
         <p>Coming Soon! We are working hard to launch our new website where you can find custom-made steering wheels.</p>
         <!-- Google Form Embed -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3gwWx4_RQ1IZDe9nZbKuUCB9vcunguglhnLQ​⬤
+        <div class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3gwWx4_RQ1IZDe9nZbKuUCB9vcunguglhnLQWZx6a6eP5wA/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+</body>
+</html>
