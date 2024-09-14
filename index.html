@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon – Custom Wheels Ldn</title>
+    <title>Coming Soon - Custom Wheels Ldn</title>
     <style>
         body {
             margin: 0;
@@ -12,54 +12,51 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             height: 100vh;
-            background-color: #000;
-            background-image: url('https://yourimageurl.com/forged-carbon-background.jpg'); /* Replace with actual image URL */
-            background-size: cover;
-            background-position: center;
+            background-color: #1e1e1e;
             color: #fff;
             text-align: center;
         }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+        }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 10px;
         }
         p {
-            font-size: 1em;
-            margin-bottom: 15px;
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
-        .form-container {
-            margin-top: 10px;
-            width: 90%;
-            max-width: 640px;
-        }
-        iframe {
-            width: 100%;
-            height: 375px;
+        .notify-form input[type="email"] {
+            padding: 10px;
+            width: 70%;
             border: none;
+            border-radius: 5px;
+            margin-right: 10px;
         }
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 0.9em;
-            }
-            iframe {
-                height: 300px;
-            }
+        .notify-form input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f39c12;
+            color: #fff;
+            cursor: pointer;
+        }
+        .notify-form input[type="submit"]:hover {
+            background-color: #e67e22;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>Custom Wheels Ldn</h1>
         <p>Coming Soon! We are working hard to launch our new website where you can find custom-made steering wheels.</p>
-        <!-- Google Form Embed -->
-        <div class="form-container">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3gwWx4_RQ1IZDe9nZbKuUCB9vcunguglhnLQWZx6a6eP5wA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        <form class="notify-form" action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <input type="submit" value="Notify Me">
+        </form>
     </div>
 </body>
 </html>
